@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { quiz } from '../data.js';
 
-const page = () => {
+const Page = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [checked, setChecked] = useState(false);
@@ -113,7 +113,7 @@ const page = () => {
   );
 };
 
-export default page; 
+export default Page; 
 
 
 
