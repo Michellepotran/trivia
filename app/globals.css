@@ -1,33 +1,96 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Set the box-sizing and clear default margins and paddings for all elements */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Design the overall layout and background */
+html, body {
+  overflow-x: hidden;
+  background-color: #f0e6f6; /* Soft lavender background */
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Playful font style */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Space for the main content */
+main {
+  padding: 2rem; /* More generous padding */
+  border: 1px dashed pink; /* Playful border style */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Styling titles with playful colors and shadows */
+h1, h2 {
+  color: #ff6fbf; /* Bright pink text */
+  text-shadow: 2px 2px 4px #ffffff80; /* Soft white shadow for depth */
+}
+
+/* Smaller heading styles */
+h3 {
+  padding-bottom: 2rem;
+  color: #fe7e95; /* Soft pink color */
+  font-size: 2rem; /* Larger font size */
+}
+
+/* Button styling with more playful attributes */
+button {
+  padding: 16px 8px;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 1rem;
+  border-radius: 12px; /* More rounded corners */
+  cursor: pointer;
+  background-color: #f9c1d9; /* Soft pink background */
+  color: #6a097d; /* Deep purple text for contrast */
+  box-shadow: 3px 3px 5px #ffb6c180; /* Soft shadow for a floating effect */
+}
+
+/* Style for disabled buttons */
+.btn-disabled {
+  background-color: #ececec; /* Lighter gray to indicate non-activity */
+}
+
+/* List item styles */
+li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 9px 0;
+  padding: 16px 8px;
+  color: #6a097d; /* Matching the button text color */
+  border: 1px solid #f9c1d9; /* Border color matching the button */
+}
+
+/* Hover effect for list items */
+.li-hover:hover {
+  background-color: #fae0f4; /* Lighter pink for hover */
+  color: #300030; /* Darker text on hover for readability */
+}
+
+/* Selected list item style */
+.li-selected {
+  color: #fff;
+  background-color: #c44569; /* Richer, darker pink for emphasis */
+}
+
+/* Container style for centered content */
+.container {
+  max-width: 740px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fff1fa; /* Very light pink background for the content area */
+  border-radius: 8px; /* Slightly rounded corners for softness */
+}
+
+/* Quiz container specific styles */
+.quiz-container {
+  background-color: #ffeff7; /* Even lighter pink background for focus */
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px; /* Consistent rounded corners */
+  box-shadow: 4px 4px 8px #ffb6c180; /* Matching shadow for 3D effect */
+}
+
+/* Paragraphs within containers */
+.container p {
+  padding: 8px 0;
 }
