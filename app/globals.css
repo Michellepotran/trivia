@@ -7,28 +7,33 @@
 
 /* Design the overall layout and background */
 html, body {
+  height: 100%;
   overflow-x: hidden;
-  background-color: #f0e6f6; /* Soft lavender background */
-  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Playful font style */
+  background-color: #f3d6e7; /* Soft lavender background */
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  display: flex; /* Use flexbox to center children */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 1rem; /* Add padding around the edges */
 }
 
 /* Space for the main content */
 main {
-  padding: 2rem; /* More generous padding */
-  border: 1px dashed pink; /* Playful border style */
+  padding: 2rem; 
+  border: 1px dashed rgb(215, 118, 134); 
 }
 
-/* Styling titles with playful colors and shadows */
+
 h1, h2 {
-  color: #ff6fbf; /* Bright pink text */
+  color: #ff6fbf; 
   text-shadow: 2px 2px 4px #ffffff80; /* Soft white shadow for depth */
 }
 
 /* Smaller heading styles */
 h3 {
   padding-bottom: 2rem;
-  color: #fe7e95; /* Soft pink color */
-  font-size: 2rem; /* Larger font size */
+  color: #fe7e95; 
+  font-size: 2rem; 
 }
 
 /* Button styling with more playful attributes */
@@ -37,7 +42,7 @@ button {
   width: 100%;
   margin-top: 12px;
   font-size: 1rem;
-  border-radius: 12px; /* More rounded corners */
+  border-radius: 12px; 
   cursor: pointer;
   background-color: #f9c1d9; /* Soft pink background */
   color: #6a097d; /* Deep purple text for contrast */
@@ -78,7 +83,7 @@ li {
   margin: auto;
   padding: 1rem;
   background-color: #fff1fa; /* Very light pink background for the content area */
-  border-radius: 8px; /* Slightly rounded corners for softness */
+  border-radius: 8px; 
 }
 
 /* Quiz container specific styles */
@@ -86,7 +91,7 @@ li {
   background-color: #ffeff7; /* Even lighter pink background for focus */
   padding: 1rem;
   margin-top: 2rem;
-  border-radius: 8px; /* Consistent rounded corners */
+  border-radius: 8px; 
   box-shadow: 4px 4px 8px #ffb6c180; /* Matching shadow for 3D effect */
 }
 
